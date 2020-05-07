@@ -6,6 +6,50 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1>Hello World, we're software developers !</h1>
+    <h1 id="title">Pedro and Joseph Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form action="" id="survey-form">
+        <label for="name">Fist Name:</label><br>
+        <input type="text" id="name" name="name" value="Your name"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" value="exemple@email.com"><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="number" name="number" min="0" max="120" value="0"><br>
+
+        <h4>Select your gender:</h4>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+
+        <h4>What programming language you prefer ?</h4><br>
+        <select id="dropdown" name="langs">
+            <option value="none">None</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </select>
+
+        <h4>What OS do you already used ?</h4>
+        <input type="checkbox" id="os1" name="os1" value="Windows">
+        <label for="os1"> Windows</label><br>
+        <input type="checkbox" id="os2" name="os2" value="MacOS">
+        <label for="os2"> MacOS</label><br>
+        <input type="checkbox" id="os3" name="os3" value="Linux">
+        <label for="os3"> Linux</label><br><br>
+
+        <h4>Any comments or suggestions ?</h4>
+        <textarea name="feedback" id="feedback" cols="50" rows="5"></textarea><br>
+        <input type="submit">
+
+    </form>
 </body>
 </html>
